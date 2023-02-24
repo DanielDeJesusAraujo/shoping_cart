@@ -1,4 +1,4 @@
-import HomePage from "./Home";
+import HomePage from "./Home/Home";
 
 export {
   HomePage,
