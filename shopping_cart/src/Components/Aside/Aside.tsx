@@ -4,15 +4,15 @@ import MainCategorys, { ItenCategory } from "./AsideStyles";
 function Aside () {
   return (
     <MainCategorys>
-      <ItenCategory>dsafdsfa</ItenCategory>
-      <ItenCategory>dsafdsfa</ItenCategory>
-      <ItenCategory>dsafdsfa</ItenCategory>
-      <ItenCategory>dsafdsfa</ItenCategory>
-      <ItenCategory>dsafdsfa</ItenCategory>
-      <ItenCategory>dsafdsfa</ItenCategory>
-      <ItenCategory>dsafdsfa</ItenCategory>
-      <ItenCategory>dsafdsfa</ItenCategory>
-      <ItenCategory>dsafdsfa</ItenCategory>
+      <ItenCategory>aside</ItenCategory>
+      <ItenCategory>aside</ItenCategory>
+      <ItenCategory>aside</ItenCategory>
+      <ItenCategory>aside</ItenCategory>
+      <ItenCategory>aside</ItenCategory>
+      <ItenCategory>aside</ItenCategory>
+      <ItenCategory>aside</ItenCategory>
+      <ItenCategory>aside</ItenCategory>
+      <ItenCategory>aside</ItenCategory>
     </MainCategorys>
   )
 }

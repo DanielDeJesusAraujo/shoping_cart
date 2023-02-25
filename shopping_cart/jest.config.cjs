@@ -19,6 +19,11 @@ module.exports = {
   bail: false,
   coverageProvider: "v8",
   clearMocks: true,
+  coveragePathIgnorePatterns: [
+    "/index.tsx",
+    "/vite.config.ts",
+    "/Context/"
+  ],
   testMatch: [
     "**/__tests__/**/*.test.ts"
   ],
