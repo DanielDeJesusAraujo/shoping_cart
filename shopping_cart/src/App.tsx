@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import ContextProvide from './Context/Provider'
-import './App.css'
 import { HomePage } from './Pages'
 
 function App() {
