@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const Main = styled.main`
+  background-color: #1852a8ea;
 
   @media (min-width: 768px) {
     padding: 5px;
