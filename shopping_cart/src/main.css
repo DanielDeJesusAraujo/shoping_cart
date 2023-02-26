@@ -1,6 +1,9 @@
 /* Reset CSS */
 #root{
   --border: 20px;
+  --primary-color: ffff;
+  --secundary-color: #ec7e53ef;
+  --tertiary-color: ffff;
 }
 
 * {
