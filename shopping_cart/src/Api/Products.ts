@@ -3,7 +3,7 @@ import { IProduct } from '../interfaces/IProductContext';
 
 
 async function getAll(): Promise<IProduct[]> {
-  const url = `https://api.mercadolibre.com/sites/MLB/search?q=roupas`;
+  const url = `https://api.mercadolibre.com/sites/MLB/search?q=moda`;
   try {
     const response = await axios.get(url);
     return response.data.results;

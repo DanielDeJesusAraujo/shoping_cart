@@ -11,6 +11,7 @@ function Products() {
   useEffect(() => {
     (async () => {
       const productList = await getAll();
+      console.log(JSON.stringify(productList))
       if (productList[0].id) {
         setProductList(productList);
       }
@@ -22,7 +23,7 @@ function Products() {
       {
         productList[0].id? (
           productList.map((prod) => (
-            <Card product={prod} />
+            <Card key={prod.id} product={prod} />
           ))
         ) : (null)
       }

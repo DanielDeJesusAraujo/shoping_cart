@@ -1,8 +1,11 @@
 import styled from 'styled-components';
 
 const MainHeader = styled.header`
+  position: fixed;
+  top: 0;
   min-height: 9vh;
-  background-color: #1852a8ea;
+  background-image: radial-gradient(circle, #ffd6d6, #ffdab0);
+  box-shadow: 0px 2px 9px 5px #0000004c;
   display: flex;
   justify-content: space-around;
   align-items: center;

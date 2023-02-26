@@ -7,11 +7,8 @@ const ProductsList = styled.ul`
   gap: 5px;
   align-items: center;
   background-color: var(--secundary-color);
-
-  li {
-    max-width: 40%;
-    min-height: 40vh;
-  }
+  padding-top: var(--my-margin);
+  margin-top: 9vh;
 
   @media (min-width: 768px) {
     background-color: #e7c013;
