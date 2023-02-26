@@ -5,12 +5,12 @@ const Li = styled.li`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
+  background-image: radial-gradient(circle, #ffd2b8, #ffffff);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
-  padding: 16px;
-  margin: 16px;
-  width: 250px;
+  border-radius: var(--my-border-radius);
+  /* padding: 10px; */
+  width: 150px;
+  min-height: 45vh;
 
   &:hover {
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
@@ -23,6 +23,9 @@ export const Img = styled.img`
   height: 150px;
   object-fit: cover;
   margin-bottom: 16px;
+  border-radius: var(--my-border-radius);
+  /* border-end-end-radius: var(--my-border-radius);
+  border-end-start-radius: var(--my-border-radius); */
 `;
 
 export const Infos = styled.section`
@@ -40,10 +43,6 @@ export const Infos = styled.section`
     font-weight: bold;
     color: #28be28;
   } 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
 `;
 
 export default Li;

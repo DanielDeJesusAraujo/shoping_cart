@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/Components/Products/ProductsStyles.tsx</title>
+    <title>Code coverage report for src/Components/CardProducts/Card.tsx</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../../prettify.css" />
     <link rel="stylesheet" href="../../../base.css" />
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../../index.html">All files</a> / <a href="index.html">src/Components/Products</a> ProductsStyles.tsx</h1>
+        <h1><a href="../../../index.html">All files</a> / <a href="index.html">src/Components/CardProducts</a> Card.tsx</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/25</span>
+                <span class='fraction'>0/23</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/25</span>
+                <span class='fraction'>0/23</span>
             </div>
         
             
@@ -86,9 +86,7 @@
 <a name='L21'></a><a href='#L21'>21</a>
 <a name='L22'></a><a href='#L22'>22</a>
 <a name='L23'></a><a href='#L23'>23</a>
-<a name='L24'></a><a href='#L24'>24</a>
-<a name='L25'></a><a href='#L25'>25</a>
-<a name='L26'></a><a href='#L26'>26</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<a name='L24'></a><a href='#L24'>24</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -111,33 +109,29 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="branch-0 cbranch-no" title="branch not covered" >import styled from 'styled-components';</span></span></span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="branch-0 cbranch-no" title="branch not covered" >import React from 'react';</span></span></span>
+<span class="cstat-no" title="statement not covered" >import { Img, Infos } from './CardStyle';</span>
+<span class="cstat-no" title="statement not covered" >import { IProduct } from '../../interfaces/IProductContext';</span>
+<span class="cstat-no" title="statement not covered" >import Li from './CardStyle';</span>
 <span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >const ProductsList = styled.ul`</span>
-<span class="cstat-no" title="statement not covered" >  display: flex;</span>
-<span class="cstat-no" title="statement not covered" >  flex-wrap: wrap;</span>
-<span class="cstat-no" title="statement not covered" >  justify-content: center;</span>
-<span class="cstat-no" title="statement not covered" >  gap: 5px;</span>
-<span class="cstat-no" title="statement not covered" >  align-items: center;</span>
-<span class="cstat-no" title="statement not covered" >  background-color: var(--secundary-color);</span>
-<span class="cstat-no" title="statement not covered" >  padding-top: var(--my-margin);</span>
-<span class="cstat-no" title="statement not covered" >  margin-top: 9vh;</span>
+<span class="cstat-no" title="statement not covered" >function Card({ product }: { product: IProduct }) {</span>
+<span class="cstat-no" title="statement not covered" >  const { thumbnail, title, price } = product;</span>
+<span class="cstat-no" title="statement not covered" >  return (</span>
+<span class="cstat-no" title="statement not covered" >    &lt;Li&gt;</span>
+<span class="cstat-no" title="statement not covered" >      &lt;Img src={thumbnail} alt={title} /&gt;</span>
+<span class="cstat-no" title="statement not covered" >      &lt;Infos&gt;</span>
+<span class="cstat-no" title="statement not covered" >        &lt;p className='tilte'&gt;{title}&lt;/p&gt;</span>
+<span class="cstat-no" title="statement not covered" >        &lt;p className='price'&gt;</span>
+<span class="cstat-no" title="statement not covered" >          {</span>
+<span class="cstat-no" title="statement not covered" >            price.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })</span>
+<span class="cstat-no" title="statement not covered" >          }</span>
+<span class="cstat-no" title="statement not covered" >        &lt;/p&gt;</span>
+<span class="cstat-no" title="statement not covered" >      &lt;/Infos&gt;</span>
+<span class="cstat-no" title="statement not covered" >    &lt;/Li&gt;</span>
+<span class="cstat-no" title="statement not covered" >  )</span>
+<span class="cstat-no" title="statement not covered" >}</span>
 <span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >  @media (min-width: 768px) {</span>
-<span class="cstat-no" title="statement not covered" >    background-color: #e7c013;</span>
-<span class="cstat-no" title="statement not covered" >    height: 100%;</span>
-<span class="cstat-no" title="statement not covered" >  }</span>
-<span class="cstat-no" title="statement not covered" >`;</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >export const ItenProducts = styled.li`</span>
-<span class="cstat-no" title="statement not covered" >  margin: auto;</span>
-<span class="cstat-no" title="statement not covered" >  height: 40%;</span>
-<span class="cstat-no" title="statement not covered" >  width: 40%;</span>
-<span class="cstat-no" title="statement not covered" >`;</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >export default ProductsList;</span>
+<span class="cstat-no" title="statement not covered" >export default Card;</span>
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
